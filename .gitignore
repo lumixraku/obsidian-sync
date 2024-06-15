@@ -1,3 +1,4 @@
-.obsidian/plugins
-.obsidian/workspace.json
-.obsidian/workspaces.json
+.obsidian/plugins/github-sync/data.json
+.obsidian/plugins/github-sync/main.js
+.obsidian/plugins/github-sync/manifest.json
+.obsidian/plugins/github-sync/styles.css
