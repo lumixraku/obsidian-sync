@@ -2,3 +2,7 @@
 .obsidian/plugins/github-sync/main.js
 .obsidian/plugins/github-sync/manifest.json
 .obsidian/plugins/github-sync/styles.css
+
+.obsidian/plugins
+.obsidian/workspace.json
+.obsidian/workspaces.json
