@@ -103,3 +103,8 @@ const material = new THREE.ShaderMaterial({
 
 ## Varying
 Pass data from vertex shader to fragment shader.
+
+
+## UV
+
+**![[Pasted image 20240711224014.png]]**
