@@ -108,3 +108,14 @@ Pass data from vertex shader to fragment shader.
 ## UV
 
 **![[Pasted image 20240711224014.png]]**
+
+
+## condition
+using step function to replace condition in some cases.
+
+`strength = strength > 0.5 ? 1 : 0` 
+To
+`strength = step(strength, 0.5)`   if strength < 0.5, return 0, else return 1
+
+
+
