@@ -141,13 +141,17 @@ another           从 master 切出 bb  cc
 ```
 最后如果在 another 分支  git merge master 的话， 是把  master 上的内容拉到 another 分支上
 merge 后 another 的 commits 为  a, b, bb, cc, c, d, merge xx  into xx  最后多一个 merge xx into xx
-![](Git/34410CF4-3581-4DB2-AED9-190566C1607E.png)
+
+![[ce04808569c71311bace6add63192dacc9d66c7e.png]]
 如果在 master 分支 merge  another 的话，`git merge another` 就是把 another 上的内容拉到 master 上
-![](Git/E25C1BF0-81CA-431B-A80A-E23E2F3CF302.png)
+![[97afbfb71cab5c42dde6e948428db3b1ebdd0533.png]]
+
+
 
 rebase的话， git rebase master  就是以 master 为 base， 然后我在 another 改动全部接在最新的 master 之上。
 下面是 git rebase master 后的 another 分支
-![](Git/8E75B107-7F2F-40D0-B6C9-8A42B37CFDB0.png)
+![[686cc6283f4d5679919ce68a2998e9e95dcf854e.png]]
+
 
 
 
