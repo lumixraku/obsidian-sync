@@ -23,8 +23,10 @@ The core OT API, which is a type with standard `apply`, `compose`, `transform
 
 
 ## ot-json1
-一个操作 json 的 OT 库，但是 API 文档过于简略。
+一个操作 json 的 OT 库，[https://github.com/ottypes/json1?tab=readme-ov-file]
+但是 API 文档过于简略，初次看有点摸不着头脑。 下面就用这个库来举几个例子。
 
+## Apply
 apply moveOp:  change property name
 ```
 const json1 = require('ot-json1')
@@ -51,6 +53,7 @@ doc = json1.type.apply(doc, op2) // {b: {x: 5, z: 'hi there'}}
 
 ```
 
+## Compose
 compose: combine a lots of operations in order.
 ```
 const json1 = require('ot-json1')
@@ -78,6 +81,7 @@ console.log(json1.type.apply(doc, opc2)) // error: cannot insert into missing it
 ```
 
 
+##  Transform
 什么情况下要用到 transform？ 
 从简介中看，transform 和 combine 操作很像。区别是 combine 只是单纯的合并， 不会自动的根据先前的变化调整 operation。
 
@@ -104,10 +108,12 @@ const json1 = require('ot-json1')
 
 const op1 = json1.moveOp(['a', 'x'], ['a', 'y'])
 const op2 = json1.insertOp(['a', 'aa'], ['aaaa'])
-// op2 applyed then op1 should transform, return transformed op1
+
+// op2 applyed first, before apply op1, op1 should transform, 
+// This command return transformed op1 after op2
 const op1t = json1.type.transform(op1, op2, 'left')
 
-// transformed op2
+// transformed op2 after op1
 const op2t = json1.type.transform(op2, op1, 'left')
 
 
