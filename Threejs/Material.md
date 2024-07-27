@@ -41,3 +41,8 @@ https://www.bilibili.com/video/BV1Ki4y1a72S?p=16&spm_id_from=pageDriver&vd_sourc
 - **优化渲染**：在某些情况下，通过 `alphatest` 可以减少需要处理的片段数量，从而提高渲染效率。
 
 使用 `alphatest` 可以有效地控制渲染过程，避免不必要的计算和渲染，特别是在处理大量半透明物体时非常有用。
+
+
+## ShaderMaterial
+
+shaderMaterial has default vertex shader & frag shader
