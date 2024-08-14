@@ -41,6 +41,8 @@ gl_Position = projectionMatrix * viewModelMatrix * vec4(position, 1.0);
 
 uniform ---> because they are the same for all vertices, provided by Threejs
 
+position ---> vertex pointer position
+
 
 ## attribute & uniform
 
@@ -106,7 +108,12 @@ Pass data from vertex shader to fragment shader.
 
 
 ## UV
+UV 坐标通常是从左下角开始的。具体来说：
 
+- **U** 轴（水平方向）从左到右，范围是 [0, 1]。
+- **V** 轴（垂直方向）从下到上，范围也是 [0, 1]。
+
+这意味着 (0, 0) 在左下角，而 (1, 1) 在右上角。
 **![[Pasted image 20240711224014.png]]**
 
 
@@ -118,4 +125,17 @@ To
 `strength = step(strength, 0.5)`   if strength < 0.5, return 0, else return 1
 
 
+## step
+step function not only two phase. it can be lots of phases.
+![[Pasted image 20240723230128.png]]
 
+
+## repeat
+重复的图形往往用到 mod
+![[Pasted image 20240723233055.png]]![[Pasted image 20240723233056.png]]
+
+## Perlin noise
+Used to create nature shapes: clouds, smoke, water, fire, terrain elevation
+
+one implemention  of perlin noise
+http://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83
