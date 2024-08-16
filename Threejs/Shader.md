@@ -139,3 +139,10 @@ Used to create nature shapes: clouds, smoke, water, fire, terrain elevation
 
 one implemention  of perlin noise
 http://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83
+
+
+## perspective
+
+近大远小效果
+https://www.bilibili.com/video/BV1Ki4y1a72S?p=30
+![[Pasted image 20240812231409.png]]
