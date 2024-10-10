@@ -69,6 +69,11 @@ git fetch origin feat:feat -f
 
 ## list branch create by myself
 ```
+列出我创建的分支， 并按时间倒序
+git for-each-ref --sort=-creatordate --format='%(refname:short)' refs/heads/ | grep -v 'master' | grep -v 'main'
+```
+
+```
 git branch -r | xargs -L1 git --no-pager show -s --oneline --author="$(git config user.name)"
 ```
 

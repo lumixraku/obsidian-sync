@@ -33,7 +33,7 @@ pipe<A, B, C, D>(
 
 ## map && switchMap
 ⚠️ Attention
-map 在 rxjs 中是映射，并不想 JS 中要求数据源是 Array，两者不一样。
+map 在 rxjs 中是映射，并不像 JS 中要求数据源是 Array，两者不一样。
 
 ex for map
 ```
