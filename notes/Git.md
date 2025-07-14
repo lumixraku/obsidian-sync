@@ -135,6 +135,22 @@ git push origin --delete <branchName>
 
 ```
 
+## glab
+```
+glab mr create \
+
+--title "你的MR标题" \
+
+--target-branch feature/aaa \
+
+--label "dev" \
+
+--no-editor \
+
+--description "Merge Request Description"
+```
+
+
 ## merge & pull —rebase
 rebase 会变基， 也就是 commit 的 parent 会变化。
 merge 的话不会，似乎是按照提交的时间顺序把所有的 commit 合并在一起的
